@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="dark" lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SolveWise | The Kinetic Luminary</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'secondary-fixed-dim': '#c8c6c9',
+              'on-error': '#690005',
+              'tertiary-fixed': '#ffdadb',
+              'surface-container': '#1f1f1f',
+              'on-tertiary-container': '#c51640',
+              primary: '#ffffff',
+              error: '#ffb4ab',
+              'on-primary-container': '#5d6b00',
+              'primary-container': '#d4f000',
+              'surface-bright': '#393939',
+              'inverse-surface': '#e2e2e2',
+              'on-secondary-fixed': '#1b1b1e',
+              'error-container': '#93000a',
+              'surface-variant': '#353535',
+              'on-tertiary': '#67001b',
+              outline: '#909378',
+              secondary: '#c8c6c9',
+              'on-secondary-fixed-variant': '#47464a',
+              'tertiary-fixed-dim': '#ffb2b7',
+              'on-surface': '#e2e2e2',
+              'surface-dim': '#131313',
+              background: '#131313',
+              'on-error-container': '#ffdad6',
+              'tertiary-container': '#ffdadb',
+              'surface-container-high': '#2a2a2a',
+              surface: '#131313',
+              'secondary-container': '#47464a',
+              'on-surface-variant': '#c6c9ab',
+              'surface-tint': '#b9d200',
+              'secondary-fixed': '#e4e1e5',
+              'on-secondary-container': '#b6b4b8',
+              'on-tertiary-fixed': '#40000d',
+              'on-tertiary-fixed-variant': '#92002a',
+              'primary-fixed': '#d4f000',
+              'on-primary-fixed': '#191e00',
+              'surface-container-low': '#1b1b1b',
+              'on-primary': '#2d3400',
+              'inverse-on-surface': '#303030',
+              tertiary: '#ffffff',
+              'on-secondary': '#303033',
+              'inverse-primary': '#586400',
+              'surface-container-lowest': '#0e0e0e',
+              'outline-variant': '#464932',
+              'primary-fixed-dim': '#b9d200',
+              'on-background': '#e2e2e2',
+              'surface-container-highest': '#353535',
+              'on-primary-fixed-variant': '#424b00',
+            },
+            fontFamily: {
+              headline: ['Space Grotesk', 'sans-serif'],
+              body: ['Manrope', 'sans-serif'],
+              label: ['Manrope', 'sans-serif'],
+            },
+            borderRadius: {
+              DEFAULT: '1rem',
+              lg: '2rem',
+              xl: '3rem',
+              full: '9999px',
+            },
+          },
+        },
+      }
+    </script>
+  </head>
+  <body class="bg-background font-body text-primary selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
