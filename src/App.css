@@ -42,3 +42,15 @@
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+.mobile-menu-panel {
+  transform: translateY(-12px);
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.mobile-menu-panel.opacity-100 {
+  transform: translateY(0);
+}
